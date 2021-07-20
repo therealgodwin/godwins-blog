@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="assets/stylesheets/about-me.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="">
+        </div>
+        <div class="navbar" id="navbar">
+            <a href="">Home</a>
+            <a href="#sidebar">About Me</a>
+            <a href="#">Portfolio</a>
+            <a href="#contact">Contact Me</a>
+        </div>
+
+        
+
+        <div id="shownav">
+            <i class="fas fa-bars" style="color: white;"></i>
+        </div>
+        
+    </header>
+
+    <div class="mobile-navbar" id="mobile-navbar">
+        <a href="index.html">Home</a>
+        <a href="#">About Me</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact Me</a>
+    </div>
+
+    <div class="content">
+        <h1>Who am I?</h1>
+
+        <div class="image-container">
+            <img src="assets/images/mypic.png" alt="">
+
+
+        </div>
+
+        <h4>Godwin Laureto</h4>
+
+        <div class="text-container">
+            <p>Hi, I'm Godwin. I'm a self taught Software Developer who now specializes in Website Development. I love to use CSS and Jquery to create awesome and aesthetic content. Over the years, I've worked with many clients from Egypt and India. I also have experience in Django, Python, C#, Kotlin, Java, and the Unity Engine. </p>
+            
+            
+            
+        </div>
+        <div class="skills">
+            <h1>My Skills:</h1>
+
+            <div class="skill">
+                <i class="fas fa-check-square"></i> 
+                <div class="text">
+                    <p>HTML, CSS, Javascript</p>
+                </div>
+                
+            </div>
+            <div class="skill">
+                <i class="fas fa-check-square"></i> 
+                <div class="text">
+                    <p>Jquery and AJAX</p>
+                </div>
+                
+            </div>
+            <div class="skill">
+                <i class="fas fa-check-square"></i> 
+                <div class="text">
+                    <p>Python and Django Web Framework</p>
+                </div>
+                
+            </div>
+            <div class="skill">
+                <i class="fas fa-check-square"></i> 
+                <div class="text">
+                    <p>Website Design with Figma</p>
+                </div>
+                
+            </div>
+            <div class="skill">
+                <i class="fas fa-check-square"></i> 
+                <div class="text">
+                    <p>Video Editing with Premiere Pro</p>
+                </div>
+                
+            </div>
+            <div class="skill">
+                <i class="fas fa-check-square"></i> 
+                <div class="text">
+                    <p>Voiceover Talent</p>
+                </div>
+                
+            </div>
+           
+        </div>
+        
+        <div class="personal-website-container">
+            <h1>Personal Websites: </h1>
+
+            <div class="card">
+                <h2>My First Website</h2>
+                <div class="card-text">
+                    <p>Responsive Design: <i class="fas fa-check-square"></i> </p>
+                    <p>Is the site running: <i class="fas fa-check-square"></i> </p>
+                
+                </div>
+                
+
+
+                <a href="http://therealgodwin.github.io">Open Site</a>
+            </div>
+            <div class="card">
+                <h2>Simple Photo Gallery Website</h2>
+                <div class="card-text">
+                    <p>Responsive Design: <i class="fas fa-check-square"></i> </p>
+                    <p>Is the site running: <i class="fas fa-check-square"></i> </p>
+                
+                </div>
+                
+
+
+                <a href="http://therealgodwin.github.io">Open Site</a>
+            </div>
+            <div class="card">
+                <h2>Wedding Planner Website</h2>
+                <div class="card-text">
+                    <p>Responsive Design: <i class="fas fa-check-square"></i> </p>
+                    <p>Is the site running: <i class="fas fa-check-square"></i> </p>
+                
+                </div>
+                
+
+
+                <a href="http://therealgodwin.github.io">Open Site</a>
+            </div>
+            
+        </div>
+
+        <div class="contact">
+            <h1>Contact Me</h1>
+
+            <div class="info-container">
+                <span>09682014631</span>
+                <span>godwinlaureto.dev17@gmail.com</span>
+
+                <div class="links">
+                    <a href="https://www.facebook.com/godwiiiinnn"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/godwiiiinnn"><i class="fab fa-facebook-messenger"></i></a>
+                </div>
+            </div>
+            
+        </div>
+
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <a href="#header"><i class="fas fa-arrow-up"></i></a>
+        <h1 style="font-size: 20px">back to top</h1>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#mobile-navbar").hide()
+
+
+            $("#shownav").click(function() {
+             
+                $("#mobile-navbar").slideToggle("slow")
+            })
+        
+
+
+        })
+    </script>
+</body>
+</html>

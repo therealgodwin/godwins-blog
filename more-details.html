@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post</title>
+
+    <link rel="stylesheet" href="assets/stylesheets/blog-post.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="">
+        </div>
+        <div class="navbar" id="navbar">
+            <a href="index.html">Home</a>
+            <a href="#">About Me</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact Me</a>  
+        </div>
+
+        
+
+        <div id="shownav">
+            <i class="fas fa-bars" style="color: white;"></i>
+        </div>
+        
+    </header>
+
+    <div class="mobile-navbar" id="mobile-navbar">
+        <a href="index.html">Home</a>
+        <a href="about-me.html">About Me</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact Me</a>
+    </div>
+
+    <div class="content">
+        <a href="index.html">Back</a>
+        <h1>A deeper dive into the field of photography</h1>
+        <p>Author: <span>Godwin Laureto</span></p>
+        <div class="image-container">
+            <img src="assets/images/1.jpg" alt="">
+            <span>This image was taken at the Museo de Sol in Portugal.</span>
+        </div>
+
+        <div class="paragraph text-container">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem tenetur dicta provident blanditiis quam, mollitia ab sunt, suscipit, ex dolore exercitationem est vel nesciunt qui? Ipsum dignissimos delectus facilis iusto perferendis consectetur voluptate ex labore eos accusamus, nihil tempora. Porro quos laborum ipsa, iure delectus beatae minus cum? Nostrum, adipisci?</p>
+        </div>
+
+        <div class="paragraph text-container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi adipisci quisquam veritatis molestias ab ducimus? Reprehenderit consequatur similique vel eligendi repudiandae architecto libero repellat tempore cupiditate accusantium, officia veniam magni debitis nobis laboriosam autem deserunt aliquam voluptas eum! Dolore quasi nulla optio alias corporis, consectetur cum quidem quam quis autem impedit est maxime laudantium tempore repellat nostrum placeat earum. Eveniet consequuntur laudantium voluptatibus tempora reiciendis eligendi, ut, ea magnam eum, ducimus totam. Ipsa obcaecati, aperiam natus delectus, quo perspiciatis deserunt accusantium maiores suscipit aut fuga? Mollitia corrupti officiis dolor, provident enim voluptatem optio eum explicabo fugiat quam laborum repellat ex veniam repellendus dolorum ullam vitae blanditiis delectus rem adipisci atque qui distinctio. Totam ad quos possimus adipisci nobis repellat, sunt molestiae non est sed minus inventore natus quae perferendis impedit error atque expedita tenetur laudantium et. Ab error minima sed itaque quibusdam at odit laborum labore nam amet! Dignissimos, incidunt autem atque voluptas ducimus consequatur qui inventore iste quidem nisi ex consequuntur dolores error impedit deleniti quod laborum asperiores at! Nulla deleniti omnis eligendi asperiores, sit quam consequuntur vero veritatis! Hic maxime, voluptates eligendi facilis mollitia cumque repellendus commodi numquam ipsum aliquam corporis omnis labore eveniet necessitatibus adipisci architecto. Cum?</p>
+        </div>
+       
+        <div class="feedback">
+            <h1>Was the post good?</h1>
+            <i class="far fa-heart" id="empty-heart"></i>
+        </div>
+    </div>
+
+    <footer>
+        <a href="#header"><i class="fas fa-arrow-up"></i></a>
+        <h1 style="font-size: 20px">back to top</h1>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $(this).find(".fa-heart").click(function() {
+                $(this).toggleClass("far fa-heart")
+                $(this).toggleClass("fas fa-heart")
+            })
+
+            $("#mobile-navbar").hide()
+
+
+            $("#shownav").click(function() {
+             
+                $("#mobile-navbar").slideToggle("slow")
+            })
+        
+
+
+        })
+    </script>
+</body>
+</html>

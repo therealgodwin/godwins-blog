@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+ 
+    header {
+        padding-left: calc(2em + 1vw);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: calc(2em + 1vw);
+        height: 15vh;
+        background-color: #202020;
+      
+    }
+
+    
+    
+
+
+    .logo > img {
+        object-fit: contain;
+        width: 70%;
+    }
+    
+    .navbar {
+        display: none;
+    }
+
+    #shownav {
+        display: block;
+    }
+
+    #shownav > i {
+        font-size: 35px;
+    }
+
+
+
+.mobile-navbar {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        background-color: #cf1717;
+        width: 50vw;
+        height: fit-content;
+        padding-bottom: 2em;
+}
+    
+.mobile-navbar > a {
+        text-decoration: none;
+        color: white;
+        font-size: 1em;
+        margin-top: 2em;
+        font-family: 'Merriweather', serif;
+}
+
+.content {
+    text-align: center;
+    margin: 1em;
+    
+    
+}
+
+.content > h1 {
+    text-transform: capitalize;
+    font-size: 9vw;
+    color: #202020;
+    font-family: 'Merriweather', serif;
+}
+
+
+.image-container {
+    background-color: #cf1717;
+    margin: auto;
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    width: 60vw;
+}
+
+.image-container > img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.content > h4 {
+    margin-top: .5em;
+    font-family: 'Merriweather', serif;
+    font-weight: lighter;
+}
+.text-container {
+    font-family: "Poppins", sans-serif;
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-top: 1em
+}
+
+.text-container > p::first-letter {
+    text-transform: capitalize;
+    color: #cf1717;
+    font-size: 50px;
+}
+
+.skills {
+    padding: 1em;
+    margin-top: 2em;
+    text-align: left;
+}
+
+.skills > h1 {
+    font-family: "Poppins", sans-serif;
+}
+
+.skill {
+    font-family: "Poppins", sans-serif;
+    align-items: center;
+    display: flex;
+    margin-top: 1em;
+}
+
+.skill > i {
+    color: green;
+}
+
+.skill > .text {
+    margin-left: 1em;
+}
+
+.personal-website-container {
+    margin-left: 1em;
+    text-align: left;
+
+}
+
+.personal-website-container > h1 {
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+}
+
+.personal-website-container > .card {
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    margin-top: 1em;
+    margin-right: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    
+    background: #00B4DB;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border-radius: 5px;
+}
+
+.card > h2 {
+    font-weight: 400;
+    font-size: 30px;
+    text-decoration: none;
+    color:#202020;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+
+.card > .card-text > h1 {
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.card-text > p > i {
+    color: rgb(72, 255, 0);
+    font-size: 20px;
+}
+
+.card > a {
+    margin-top: 3em;
+    padding: .4em;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    background-color: #202020;
+}
+
+.contact {
+    margin-top: 2em;
+    margin-left: 1em;
+    text-align: left;
+}
+
+.contact > h1 {
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+.info-container {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-container > span {
+    font-family: "Poppins", sans-serif;
+}
+
+.links {
+    margin-top: 1em;
+}
+
+.links > a > i {
+    margin-right: .3em;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #202020;
+    padding-bottom: 1em;
+}
+footer > a > i {
+    margin-top: 1em;
+    color: white;
+    font-size: calc(20px + 1vw);
+    margin-bottom: 3px;
+    padding: .5em;
+    border: 2px solid #202020;
+}
+
+footer > a > i:hover {
+
+    border: 2px solid white;
+}
+footer > h1 {
+    color: white;
+    font-size: calc(8px + 1vh);
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+}
